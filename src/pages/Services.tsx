@@ -6,45 +6,45 @@ import LazyImage from '../components/LazyImage';
 const services = [
   {
     id: '01',
-    title: 'Web Systems',
+    title: 'Sistemas Web',
     icon: 'dns',
-    description: 'Custom high-performance web applications engineered for scale. We build the backbone of your digital presence using cutting-edge frameworks.',
-    features: ['React/Next.js Architecture', 'Server-Side Rendering', 'Global CDN Deployment', '99.9% Uptime SLA']
+    description: 'Aplicações web de alto desempenho e personalizadas para escalabilidade. Construímos a espinha dorsal da sua presença digital usando frameworks de ponta.',
+    features: ['Arquitetura React/Next.js', 'Server-Side Rendering', 'Implantação CDN Global', '99.9% SLA de Uptime']
   },
   {
     id: '02',
-    title: 'Data Analytics',
+    title: 'Análise de Dados',
     icon: 'analytics',
-    description: 'Transform raw data into actionable intelligence. Our dashboards provide real-time visibility into your business metrics.',
-    features: ['Real-time Visualization', 'Predictive Modeling', 'Custom Reporting Pipelines', 'Data Warehousing']
+    description: 'Transforme dados brutos em inteligência acionável. Nossos dashboards fornecem visibilidade em tempo real das suas métricas de negócio.',
+    features: ['Visualização em Tempo Real', 'Modelagem Preditiva', 'Pipelines de Relatórios Personalizados', 'Data Warehousing']
   },
   {
     id: '03',
     title: 'Growth Engineering',
     icon: 'rocket_launch',
-    description: 'Scientific approach to user acquisition. We optimize every touchpoint to maximize conversion rates and ROI.',
-    features: ['A/B Testing Frameworks', 'Conversion Rate Optimization', 'Paid Traffic Management', 'Funnel Architecture']
+    description: 'Abordagem científica para aquisição de usuários. Otimizamos cada ponto de contato para maximizar taxas de conversão e ROI.',
+    features: ['Frameworks de A/B Testing', 'Otimização de Taxa de Conversão', 'Gestão de Tráfego Pago', 'Arquitetura de Funil']
   },
   {
     id: '04',
-    title: 'UI/UX Architecture',
+    title: 'Arquitetura UI/UX',
     icon: 'layers',
-    description: 'User-centric design systems that ensure consistency and usability across all your digital products.',
-    features: ['Design Systems', 'Interactive Prototyping', 'User Research', 'Accessibility Compliance']
+    description: 'Sistemas de design centrados no usuário que garantem consistência e usabilidade em todos os seus produtos digitais.',
+    features: ['Design Systems', 'Prototipagem Interativa', 'Pesquisa de Usuário', 'Conformidade de Acessibilidade']
   },
   {
     id: '05',
-    title: 'Mobile Development',
+    title: 'Desenvolvimento Mobile',
     icon: 'smartphone',
-    description: 'Native-quality mobile experiences built with cross-platform technologies to reach users on any device.',
-    features: ['iOS & Android', 'React Native', 'Offline-First Architecture', 'App Store Optimization']
+    description: 'Experiências mobile de qualidade nativa construídas com tecnologias cross-platform para alcançar usuários em qualquer dispositivo.',
+    features: ['iOS & Android', 'React Native', 'Arquitetura Offline-First', 'Otimização de App Store']
   },
   {
     id: '06',
-    title: 'Automation',
+    title: 'Automação',
     icon: 'smart_toy',
-    description: 'Streamline operations with custom internal tools and workflow automation that reduce manual overhead.',
-    features: ['Workflow Automation', 'API Integrations', 'Bot Development', 'Legacy System Migration']
+    description: 'Simplifique operações com ferramentas internas personalizadas e automação de workflow que reduzem o trabalho manual.',
+    features: ['Automação de Workflow', 'Integrações de API', 'Desenvolvimento de Bots', 'Migração de Sistemas Legados']
   }
 ];
 
@@ -62,13 +62,13 @@ export default function Services() {
         >
           <div className="flex items-center gap-3 mb-4">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-            <span className="text-primary font-mono text-xs font-bold tracking-widest uppercase">System_Modules</span>
+            <span className="text-primary font-mono text-xs font-bold tracking-widest uppercase">Módulos_do_Sistema</span>
           </div>
           <h1 className={`text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-            Core <span className="text-primary">Capabilities</span>
+            <span className="text-primary">Capacidades</span> Principais
           </h1>
           <p className={`text-lg font-medium max-w-2xl ${theme === 'dark' ? 'text-white/50' : 'text-slate-500'}`}>
-            Deploying enterprise-grade solutions across the digital spectrum. Select a module to inspect capabilities.
+            Implantando soluções de nível empresarial em todo o espectro digital. Selecione um módulo para inspecionar capacidades.
           </p>
         </motion.div>
       </div>

@@ -16,10 +16,10 @@ export default function Layout({ children, currentPage, onNavigate }: LayoutProp
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'services', label: 'Services' },
-    { id: 'founders', label: 'Founders' },
-    { id: 'network', label: 'Network' },
+    { id: 'home', label: 'Início' },
+    { id: 'services', label: 'Serviços' },
+    { id: 'founders', label: 'Fundadores' },
+    { id: 'network', label: 'Rede' },
   ];
 
   return (
@@ -143,9 +143,9 @@ export default function Layout({ children, currentPage, onNavigate }: LayoutProp
             </span>
           </div>
           <div className={`flex gap-8 text-[10px] font-mono uppercase tracking-widest ${theme === 'dark' ? 'text-white/30' : 'text-slate-400'}`}>
-            <a href="#" className="hover:text-primary transition-colors">Privacy_Logs</a>
-            <a href="#" className="hover:text-primary transition-colors">Global_Terms</a>
-            <a href="#" className="hover:text-primary transition-colors">Contact_Endpoint</a>
+            <a href="#" className="hover:text-primary transition-colors">Privacidade</a>
+            <a href="#" className="hover:text-primary transition-colors">Termos</a>
+            <a href="#" className="hover:text-primary transition-colors">Contato</a>
           </div>
           <div className="flex gap-4">
             {['monitoring', 'share'].map((icon) => (

@@ -6,56 +6,56 @@ const partners = [
   {
     id: '01',
     name: 'TechCorp Solutions',
-    industry: 'Enterprise Software',
+    industry: 'Software Empresarial',
     logo: 'cloud',
-    description: 'Leading provider of cloud infrastructure solutions for Fortune 500 companies.',
-    collaboration: 'Joint development of microservices architecture',
-    results: '300% increase in system scalability'
+    description: 'Líder em soluções de infraestrutura em nuvem para empresas Fortune 500.',
+    collaboration: 'Desenvolvimento conjunto de arquitetura de microsserviços',
+    results: 'Aumento de 300% na escalabilidade do sistema'
   },
   {
     id: '02', 
     name: 'Global Retail Group',
     industry: 'E-commerce',
     logo: 'shopping_bag',
-    description: 'International retail chain with presence in 45 countries.',
-    collaboration: 'Complete digital transformation and POS integration',
-    results: '150% growth in online sales'
+    description: 'Rede de varejo internacional com presença em 45 países.',
+    collaboration: 'Transformação digital completa e integração de PDV',
+    results: 'Crescimento de 150% nas vendas online'
   },
   {
     id: '03',
     name: 'FinTech Innovations',
-    industry: 'Financial Services',
+    industry: 'Serviços Financeiros',
     logo: 'account_balance',
-    description: 'Next-generation banking platform with AI-powered financial insights.',
-    collaboration: 'Security infrastructure and compliance systems',
-    results: 'Zero security breaches in 3+ years'
+    description: 'Plataforma bancária de próxima geração com insights financeiros alimentados por IA.',
+    collaboration: 'Infraestrutura de segurança e sistemas de conformidade',
+    results: 'Zero violações de segurança em 3+ anos'
   },
   {
     id: '04',
     name: 'HealthTech Dynamics',
-    industry: 'Healthcare',
+    industry: 'Saúde',
     logo: 'medical_services',
-    description: 'Digital health platform connecting patients with healthcare providers.',
-    collaboration: 'HIPAA-compliant telemedicine infrastructure',
-    results: '2M+ patient consultations facilitated'
+    description: 'Plataforma de saúde digital conectando pacientes com profissionais de saúde.',
+    collaboration: 'Infraestrutura de telemedicina compatível com HIPAA',
+    results: '2M+ de consultas de pacientes facilitadas'
   },
   {
     id: '05',
     name: 'EduTech Systems',
-    industry: 'Education',
+    industry: 'Educação',
     logo: 'school',
-    description: 'Online learning platform for K-12 and higher education institutions.',
-    collaboration: 'Scalable LMS architecture and content delivery',
-    results: '500K+ active students worldwide'
+    description: 'Plataforma de aprendizado online para instituições de ensino K-12 e superior.',
+    collaboration: 'Arquitetura LMS escalável e entrega de conteúdo',
+    results: '500K+ de estudantes ativos mundialmente'
   },
   {
     id: '06',
     name: 'Logistics Pro',
-    industry: 'Supply Chain',
+    industry: 'Cadeia de Suprimentos',
     logo: 'local_shipping',
-    description: 'AI-powered logistics optimization and fleet management platform.',
-    collaboration: 'Real-time tracking and route optimization systems',
-    results: '40% reduction in delivery times'
+    description: 'Plataforma de otimização logística e gestão de frota alimentada por IA.',
+    collaboration: 'Sistemas de rastreamento em tempo real e otimização de rotas',
+    results: 'Redução de 40% nos tempos de entrega'
   }
 ];
 
@@ -74,14 +74,14 @@ export default function Network() {
       >
         <div className="flex items-center gap-3 mb-4">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-          <span className="text-primary font-mono text-xs font-bold tracking-widest uppercase">Network_Ecosystem</span>
+          <span className="text-primary font-mono text-xs font-bold tracking-widest uppercase">Ecossistema_de_Rede</span>
         </div>
         <h1 className={`text-4xl md:text-6xl font-black leading-tight tracking-tighter mb-6 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-          Strategic <span className="gradient-text">Partnerships</span>
+          Parcerias <span className="gradient-text">Estratégicas</span>
         </h1>
         <p className={`text-lg font-medium max-w-2xl ${theme === 'dark' ? 'text-white/50' : 'text-slate-500'}`}>
-          Building lasting relationships with industry leaders. Our network spans across multiple sectors, 
-          delivering transformative solutions at scale.
+          Construindo relacionamentos duradouros com líderes do setor. Nossa rede abrange múltiplos setores,
+          entregando soluções transformadoras em escala.
         </p>
       </motion.div>
 
@@ -93,10 +93,10 @@ export default function Network() {
         className={`grid grid-cols-2 md:grid-cols-4 gap-6 mb-16`}
       >
         {[
-          { label: 'Partners', value: '50+', icon: 'handshake' },
-          { label: 'Industries', value: '12', icon: 'category' },
-          { label: 'Countries', value: '45', icon: 'public' },
-          { label: 'Projects', value: '200+', icon: 'rocket_launch' }
+          { label: 'Parceiros', value: '50+', icon: 'handshake' },
+          { label: 'Setores', value: '12', icon: 'category' },
+          { label: 'Países', value: '45', icon: 'public' },
+          { label: 'Projetos', value: '200+', icon: 'rocket_launch' }
         ].map((stat, i) => (
           <div
             key={i}
@@ -186,7 +186,7 @@ export default function Network() {
                 <div className="space-y-4 pt-4 border-t">
                   <div>
                     <h4 className={`text-xs font-bold uppercase tracking-wider mb-2 text-primary`}>
-                      Collaboration
+                      Colaboração
                     </h4>
                     <p className={`text-sm ${theme === 'dark' ? 'text-white/70' : 'text-slate-600'}`}>
                       {partner.collaboration}
@@ -195,7 +195,7 @@ export default function Network() {
                   
                   <div>
                     <h4 className={`text-xs font-bold uppercase tracking-wider mb-2 text-primary`}>
-                      Results
+                      Resultados
                     </h4>
                     <p className={`text-sm font-bold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                       {partner.results}
@@ -210,7 +210,7 @@ export default function Network() {
                   ? 'text-primary hover:bg-white/5' 
                   : 'text-primary hover:bg-primary/5'
               }`}>
-                {selectedPartner === index ? 'Show Less' : 'View Details'}
+                {selectedPartner === index ? 'Mostrar Menos' : 'Ver Detalhes'}
               </button>
             </div>
           </motion.div>
@@ -229,24 +229,24 @@ export default function Network() {
         }`}
       >
         <h2 className={`text-3xl font-black mb-4 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-          Ready to Join Our Network?
+          Pronto para Entrar em Nossa Rede?
         </h2>
         <p className={`text-lg mb-8 max-w-2xl mx-auto ${
           theme === 'dark' ? 'text-white/60' : 'text-slate-600'
         }`}>
-          Partner with us to accelerate your digital transformation journey. 
-          Let's build something extraordinary together.
+          Parceie conosco para acelerar sua jornada de transformação digital.
+          Vamos construir algo extraordinário juntos.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-colors">
-            Become a Partner
+            Tornar-se Parceiro
           </button>
           <button className={`px-8 py-4 rounded-xl font-bold border transition-colors ${
             theme === 'dark' 
               ? 'border-white/20 text-white hover:bg-white/10' 
               : 'border-slate-300 text-slate-700 hover:bg-slate-50'
           }`}>
-            Schedule Consultation
+            Agendar Consultoria
           </button>
         </div>
       </motion.div>

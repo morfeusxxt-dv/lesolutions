@@ -12,10 +12,10 @@ export default function Founders() {
           <span className="text-primary font-mono font-bold tracking-[0.4em] uppercase text-[9px]">Protocol: Founders_v3.0</span>
         </div>
         <h1 className={`text-5xl lg:text-7xl font-black leading-tight tracking-tighter ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-          Founders Tech <span className="text-primary">Profiles</span>
+          Perfis <span className="text-primary">Técnicos</span> dos Fundadores
         </h1>
         <p className={`text-lg font-medium max-w-2xl leading-relaxed ${theme === 'dark' ? 'text-white/50' : 'text-slate-500'}`}>
-          Orchestrating high-end digital architecture through the synergy of strategic leadership and technical mastery.
+          Orquestrando arquitetura digital de alta ponta através da sinergia entre liderança estratégica e maestria técnica.
         </p>
       </div>
 
@@ -44,31 +44,31 @@ export default function Founders() {
                 <div className={`w-full h-full hexagon-clip relative overflow-hidden ${theme === 'dark' ? 'bg-dark-bg' : 'bg-white'}`}>
                   <div 
                     className="absolute inset-0 bg-center bg-cover transition-all duration-700 opacity-80 group-hover:grayscale-0 grayscale"
-                    style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW5An9rliErOcRULuRHOKydOsQ6FNwA_nXn6DW0cZhotS_65HMQ3K6ZSRZPg9R5iIkUr7_ETNVT3skTUXjP0EUO1bayuDhpAxtPjjuB3xPVh7cWFq1ziMMvCRFZEtK3d6Dxk7Dj5uGRUXJgOR8NpZTgd5NfsrSpZO-1Km79HtTGvC8cq6pZYyTvAce9TOtY1DkYBfJqtO8GQFicyJbVWMdUZMuYEjIgUN1DAuzT-Nlq5pZSa8ZEuoAgFP0-SjSp3KK9TART01tMptj")' }}
+                    style={{ backgroundImage: 'url("/founders/lian.png")' }}
                   ></div>
                   <div className={`absolute inset-0 bg-gradient-to-t ${theme === 'dark' ? 'from-dark-bg' : 'from-white'} via-transparent to-transparent`}></div>
                   <div className="absolute top-8 left-4 font-mono text-[9px] text-primary/60 tracking-tighter">
-                    [NODE_ID: MS_001]
+                    [NODE_ID: LM_001]
                   </div>
                 </div>
               </div>
               <div className="absolute -top-6 -right-6 size-24 border-t-2 border-r-2 border-primary/40 rounded-tr-3xl"></div>
               <div className="absolute -bottom-4 -left-4 px-3 py-1 bg-primary text-dark-bg font-mono text-[10px] font-bold skew-x-[-12deg]">
-                CHIEF_STRATEGY
+                LEAD_DEV
               </div>
             </div>
             <div className="text-center">
-              <h3 className={`text-4xl font-black tracking-tighter mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Marcus Sterling</h3>
+              <h3 className={`text-4xl font-black tracking-tighter mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Lian Mendes</h3>
               <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-[0.3em] mb-6 flex items-center justify-center gap-2">
                 <span className="h-px w-4 bg-primary/30"></span>
-                Strategic Operations Director
+                Lead Developer & System Architect
                 <span className="h-px w-4 bg-primary/30"></span>
               </div>
               <p className={`text-sm leading-relaxed max-w-xs mx-auto mb-8 font-medium ${theme === 'dark' ? 'text-white/40' : 'text-slate-500'}`}>
-                Architect of sustainable product ecosystems and global digital transformation frameworks.
+                Building robust back-end systems and scalable architectures for high-performance digital solutions.
               </p>
               <div className="flex justify-center gap-4">
-                {['terminal', 'lan'].map((icon) => (
+                {['code_blocks', 'terminal'].map((icon) => (
                   <div key={icon} className={`size-10 rounded-full border flex items-center justify-center transition-all cursor-pointer ${
                     theme === 'dark' 
                       ? 'border-white/10 text-white/40 hover:border-primary hover:text-primary bg-white/5' 
@@ -95,31 +95,31 @@ export default function Founders() {
                 <div className={`w-full h-full hexagon-clip relative overflow-hidden ${theme === 'dark' ? 'bg-dark-bg' : 'bg-white'}`}>
                   <div 
                     className="absolute inset-0 bg-center bg-cover transition-all duration-700 opacity-80 group-hover:grayscale-0 grayscale"
-                    style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBFZfpZXNP9OLEkUrdNiuIkuN3nS_h_qGz3FBK8ezwK6vsgQ_M8IRVnqxkUrS7ogao-aPK58LsDwTDTjYXelc9i7XNo-sun7uFA_yMHoqHcwyQ7Qq_RSwAuoMGTCG_HibFvn7XpH0G3lQyQQE6792nyLImVV3uvPSwIP6ANSMXx34OPr2cInaSjdXL3I2aWxMb8xgSkVkEQqWpG3XI4CeKpPtz2nqfMnQvUueQ9IqbA7eNSNkJm9r2h1x-CuEk_6Au6ryjQ7NbaDp1")' }}
+                    style={{ backgroundImage: 'url("/founders/eric.png")' }}
                   ></div>
                   <div className={`absolute inset-0 bg-gradient-to-t ${theme === 'dark' ? 'from-dark-bg' : 'from-white'} via-transparent to-transparent`}></div>
                   <div className="absolute top-8 right-4 font-mono text-[9px] text-primary/60 tracking-tighter text-right">
-                    [NODE_ID: ER_099]
+                    [NODE_ID: EC_099]
                   </div>
                 </div>
               </div>
               <div className="absolute -top-6 -left-6 size-24 border-t-2 border-l-2 border-primary/40 rounded-tl-3xl"></div>
               <div className="absolute -bottom-4 -right-4 px-3 py-1 bg-primary text-dark-bg font-mono text-[10px] font-bold skew-x-[12deg]">
-                SYSTEM_ARCHITECT
+                CREATIVE_DIR
               </div>
             </div>
             <div className="text-center">
-              <h3 className={`text-4xl font-black tracking-tighter mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Elena Rodriguez</h3>
+              <h3 className={`text-4xl font-black tracking-tighter mb-2 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Eric Costa</h3>
               <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-[0.3em] mb-6 flex items-center justify-center gap-2">
                 <span className="h-px w-4 bg-primary/30"></span>
-                Lead Systems Architect
+                Creative Director & Photographer
                 <span className="h-px w-4 bg-primary/30"></span>
               </div>
               <p className={`text-sm leading-relaxed max-w-xs mx-auto mb-8 font-medium ${theme === 'dark' ? 'text-white/40' : 'text-slate-500'}`}>
-                Engineering robust back-end clusters and advanced AI neural networks for high-concurrency systems.
+                Crafting stunning visual identities and capturing compelling stories through photography and design.
               </p>
               <div className="flex justify-center gap-4">
-                {['code_blocks', 'database'].map((icon) => (
+                {['palette', 'photo_camera'].map((icon) => (
                   <div key={icon} className={`size-10 rounded-full border flex items-center justify-center transition-all cursor-pointer ${
                     theme === 'dark' 
                       ? 'border-white/10 text-white/40 hover:border-primary hover:text-primary bg-white/5' 
@@ -147,22 +147,22 @@ export default function Founders() {
             <div className={`absolute top-0 right-0 p-4 font-mono text-[8px] ${theme === 'dark' ? 'text-white/10' : 'text-slate-300'}`}>CORE_ENGINE_V3.0.4</div>
             <div className="flex flex-col lg:flex-row items-start gap-12">
               <div className="lg:w-1/3">
-                <div className="text-primary font-mono text-[10px] mb-4 tracking-widest">&gt;&gt; MISSION_LOG</div>
-                <h2 className={`text-3xl font-black tracking-tighter ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Unified System Delivery Protocol</h2>
+                <div className="text-primary font-mono text-[10px] mb-4 tracking-widest">&gt;&gt; REGISTRO_DE_MISSÃO</div>
+                <h2 className={`text-3xl font-black tracking-tighter ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Protocolo Unificado de Entrega de Sistemas</h2>
               </div>
               <div className={`lg:w-2/3 lg:border-l lg:pl-12 ${theme === 'dark' ? 'border-white/5' : 'border-slate-200'}`}>
                 <p className={`text-base leading-relaxed mb-6 font-medium ${theme === 'dark' ? 'text-white/50' : 'text-slate-500'}`}>
-                  Our synergy is defined by the seamless convergence of <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>strategic foresight</span> and <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>technical precision</span>. We engineer digital environments that transcend conventional scalability, ensuring every line of source code translates to measurable performance.
+                  Nossa sinergia é definida pela convergência perfeita entre <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>visão estratégica</span> e <span className={theme === 'dark' ? 'text-white' : 'text-slate-900'}>precisão técnica</span>. Projetamos ambientes digitais que transcendem escalabilidade convencional, garantindo que cada linha de código fonte se traduza em desempenho mensurável.
                 </p>
                 <div className="flex gap-8 items-center">
                   <div className="flex flex-col">
                     <span className="text-primary font-black text-xl">99.9%</span>
-                    <span className={`text-[9px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-white/30' : 'text-slate-400'}`}>Uptime_Commit</span>
+                    <span className={`text-[9px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-white/30' : 'text-slate-400'}`}>Compromisso_Uptime</span>
                   </div>
                   <div className={`w-px h-8 ${theme === 'dark' ? 'bg-white/5' : 'bg-slate-200'}`}></div>
                   <div className="flex flex-col">
                     <span className="text-primary font-black text-xl">120ms</span>
-                    <span className={`text-[9px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-white/30' : 'text-slate-400'}`}>Latency_Avg</span>
+                    <span className={`text-[9px] uppercase font-bold tracking-widest ${theme === 'dark' ? 'text-white/30' : 'text-slate-400'}`}>Latência_Média</span>
                   </div>
                 </div>
               </div>
