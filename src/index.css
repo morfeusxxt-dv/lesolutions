@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-primary: #F97316;
+  --color-primary-dark: #ea580c;
+  --color-dark-bg: #0a0a0c;
+  --color-dark-card: #121216;
+  --color-light-bg: #ffffff;
+  --color-light-card: #f8fafc;
+}
+
+@layer utilities {
+  .hexagon-clip {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  
+  .tech-grid-dark {
+    background-image: 
+        linear-gradient(to right, rgba(249, 115, 22, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(249, 115, 22, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .tech-grid-light {
+    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .glow-border {
+    filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4));
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #F97316, #fb923c, #fed7aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    background: linear-gradient(135deg, #F97316, #fb923c);
+    padding: 1px;
+    border-radius: inherit;
+  }
+
+  .card-hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+  }
+
+  .backdrop-blur-strong {
+    backdrop-filter: blur(20px);
+  }
+}
+
+body {
+  font-family: var(--font-display);
+  @apply antialiased transition-colors duration-300;
+}
