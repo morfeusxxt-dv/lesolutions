@@ -10,7 +10,7 @@ interface LazyImageProps {
 export default function LazyImage({ src, alt, className, placeholder }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
+  const imgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,7 +34,7 @@ export default function LazyImage({ src, alt, className, placeholder }: LazyImag
     <div ref={imgRef} className={`relative overflow-hidden ${className}`}>
       {/* Placeholder */}
       {!isLoaded && (
-        <div className={`absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-300 animate-pulse ${className}`} />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-300 animate-pulse" />
       )}
       
       {/* Actual Image */}
@@ -42,8 +42,9 @@ export default function LazyImage({ src, alt, className, placeholder }: LazyImag
         <img
           src={src}
           alt={alt}
-          className={`transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${className}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
           onLoad={() => setIsLoaded(true)}
+          onError={() => setIsLoaded(true)} // Handle error to show fallback
         />
       )}
     </div>
