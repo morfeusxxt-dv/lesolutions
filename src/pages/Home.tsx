@@ -11,28 +11,28 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
 
   const websites = [
     {
-      title: "E-commerce Excellence",
-      desc: "Ultra-fast Next.js store for global retail brands with headless CMS integration.",
+      title: "Excelência em E-commerce",
+      desc: "Loja Next.js ultra-rápida para marcas de varejo globais com integração de headless CMS.",
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAISb3LmUbQlX1LT0qHiLR3a_eNVDUW7PxqGzFKIVUQO7UNZoCnd3CcU-nQ0XAfGOlUzexi0a_QByDs1k8gOCvHVGFc6YhxNQPfnQvq5UFkV7YHNJ0ILopSwIKBBxP0ccnO_cHFuxbMUDFQX6ilULSfU6rXopA6VA5rtMpvkg9iqBDYDLWPQq1fprquYNtLgdppTRZzb55dHuEZ7hJQ4xloJJQ5moSf-zX-3jJg0mug_rYacF-Sn36w2AsGdIDLqyUrfcSGq_uZzjHx",
-      details: "Complete digital transformation for a luxury fashion retailer, featuring real-time inventory management, AI-powered recommendations, and seamless checkout experience.",
+      details: "Transformação digital completa para varejo de luxo, com gerenciamento de inventário em tempo real, recomendações alimentadas por IA e experiência de checkout perfeita.",
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "Stripe API"],
-      results: "Achieved 99.9% uptime, 2.3s load time, and 45% increase in conversion rate within 6 months."
+      results: "Alcançou 99.9% de uptime, tempo de carregamento de 2.3s e aumento de 45% na taxa de conversão em 6 meses."
     },
     {
-      title: "SaaS Innovation",
-      desc: "Scalable cloud-native platforms with real-time data synchronization architecture.",
+      title: "Inovação SaaS",
+      desc: "Plataformas cloud nativas escaláveis com arquitetura de sincronização de dados em tempo real.",
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCjQsZhT2avVWNyX6heoCnA7BAUO6QnI1YdOGguxlgfHXIME5QvBn6zESRBwiXqxl8M_-bxwSCsgkSpfqACi0zz8mTSXKxgla9i7dwCv7F_pMCIPxVkvmastbSOqfO-DZ27e4qrMfABwhZV81ogpn8jZfMbHybZ8LLjPE0TPb-ehPA5xdlFBYr_iN3H7GDkGR2wyy3gop48UlKAeOjqFaEayXmmV8XbHKXJk1WBryPudfNuyF6SKyNEDDIKfg8W-v_TA3pSAL6PDc1Y",
-      details: "Enterprise project management platform with real-time collaboration, advanced analytics dashboard, and automated workflow optimization.",
+      details: "Plataforma de gerenciamento de projetos empresarial com colaboração em tempo real, dashboard analítico avançado e otimização de fluxos de trabalho automatizados.",
       technologies: ["React", "Node.js", "MongoDB", "WebSocket", "Docker"],
-      results: "Scaled to 100K+ daily active users, reduced project completion time by 35%, and achieved 99.95% uptime SLA."
+      results: "Escalado para 100K+ usuários ativos diários, reduziu tempo de conclusão de projetos em 35% e alcançou 99.95% de uptime SLA."
     },
     {
-      title: "Corporate Portal",
-      desc: "High-security internal systems for enterprise resource planning and reporting.",
+      title: "Portal Corporativo",
+      desc: "Sistemas internos de alta segurança para planejamento de recursos empresariais e relatórios.",
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFKVdpy9ovVagXOt5U5ZHUOqUP3AZYqF5GfCmjDXB0GbD9JPTPVADWXSUJ51jD9CH-S_kN_zA9E2YD3Jj3gH0G7YtAB9qhgpRPDq77ZJaxdq_GnNuHW5Ips8zUJm2mmUAuLlUcenUwBj22qEqF4_wtI-ZWVy2MXz4Ewq_DMsdPaNzXm8pCU_L5CNfRseoI6OoyHZFMmKII_qCeGlzqsvORbYGieO-wqogosQmHiivzAwILNm0xqcX-OBa4bIP_J3jsWlmWkZ7SIx5B",
-      details: "Comprehensive ERP solution with multi-tenant architecture, advanced security protocols, and AI-driven business intelligence.",
+      details: "Solução ERP abrangente com arquitetura multi-tenant, protocolos de segurança avançados e inteligência de negócios alimentada por IA.",
       technologies: ["Angular", ".NET Core", "SQL Server", "Azure", "Power BI"],
-      results: "Streamlined operations for 5000+ employees, reduced processing time by 60%, and ensured zero data breaches for 3+ years."
+      results: "Otimizou operações para 5000+ funcionários, reduziu tempo de processamento em 60% e garantiu zero violações de dados por 3+ anos."
     }
   ];
 
@@ -48,27 +48,27 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         >
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full w-fit">
             <span className="material-symbols-outlined text-sm">bolt</span>
-            <span className="text-xs font-bold uppercase tracking-wider">Innovative Tech Partner</span>
+            <span className="text-xs font-bold uppercase tracking-wider">Parceiro Tecnológico Inovador</span>
           </div>
           <h1 className={`text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-            Interactive Tech <span className="gradient-text text-shadow-glow">Solutions</span> Showcase
+            Soluções Tecnológicas <span className="gradient-text text-shadow-glow">Interativas</span>
           </h1>
           <p className={`text-lg md:text-xl font-light leading-relaxed max-w-xl ${theme === 'dark' ? 'text-white/50' : 'text-slate-600'}`}>
-            Elevating your business with premium digital craftsmanship, high-performance web systems, and data-driven growth strategies.
+            Elevando seu negócio com artesanato digital premium, sistemas web de alto desempenho e estratégias de crescimento baseadas em dados.
           </p>
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:bg-primary/90 transition-all flex items-center gap-2"
             >
-              View Portfolio <span className="material-symbols-outlined">arrow_downward</span>
+              Ver Portfólio <span className="material-symbols-outlined">arrow_downward</span>
             </button>
             <button className={`border-2 px-8 py-4 rounded-xl font-bold text-lg transition-all card-hover-lift ${
               theme === 'dark' 
                 ? 'bg-dark-card border-white/10 text-white hover:border-primary hover:bg-primary/10' 
                 : 'bg-white border-slate-100 text-slate-700 hover:border-primary hover:bg-primary/5'
             }`}>
-              Our Stack
+              Nossa Stack
             </button>
           </div>
         </motion.div>
@@ -98,7 +98,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         <div className="flex items-end justify-between border-b border-primary/20 pb-4">
           <div className="flex items-center gap-4">
             <div className="w-2 h-10 bg-primary rounded-full"></div>
-            <h2 className={`text-3xl font-black uppercase tracking-tighter italic ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Websites</h2>
+            <h2 className={`text-3xl font-black uppercase tracking-tighter italic ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Sites</h2>
           </div>
           <div className="flex gap-2">
             <button className="p-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all">
@@ -143,7 +143,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
                       : 'bg-slate-50 text-slate-900 border-slate-200'
                   }`}
                 >
-                  View Project Case Study
+                  Ver Estudo de Caso
                 </button>
               </div>
             </motion.div>
@@ -156,7 +156,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         <div className="flex items-end justify-between border-b border-primary/20 pb-4">
           <div className="flex items-center gap-4">
             <div className="w-2 h-10 bg-primary rounded-full"></div>
-            <h2 className={`text-3xl font-black uppercase tracking-tighter italic ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Paid Traffic</h2>
+            <h2 className={`text-3xl font-black uppercase tracking-tighter italic ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Tráfego Pago</h2>
           </div>
         </div>
         
@@ -209,8 +209,8 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-[10px] font-bold text-primary mb-1 uppercase tracking-tighter">Social Ads</p>
-                  <p className={`text-sm font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Retargeting Strategy for High-LTV customers.</p>
+                  <p className="text-[10px] font-bold text-primary mb-1 uppercase tracking-tighter">Anúncios Sociais</p>
+                  <p className={`text-sm font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Estratégia de retargeting para clientes de alto LTV.</p>
                 </div>
               </div>
             </div>
@@ -224,8 +224,8 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-[10px] font-bold text-slate-500 mb-1 uppercase tracking-tighter">Search Engine Marketing</p>
-                  <p className={`text-sm font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Dominating high-intent search keywords.</p>
+                  <p className="text-[10px] font-bold text-slate-500 mb-1 uppercase tracking-tighter">Marketing em Mecanismos de Busca</p>
+                  <p className={`text-sm font-bold leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Dominando palavras-chave de busca de alta intenção.</p>
                 </div>
               </div>
             </div>
@@ -238,9 +238,9 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <div className="w-2 h-10 bg-primary rounded-full"></div>
-            <h2 className="text-white text-3xl font-black uppercase tracking-tighter italic">Business Solutions</h2>
+            <h2 className="text-white text-3xl font-black uppercase tracking-tighter italic">Soluções Empresariais</h2>
           </div>
-          <p className="text-slate-400 max-w-md text-sm">Custom internal toolsets, automated workflows, and data ecosystems built for scale.</p>
+          <p className="text-slate-400 max-w-md text-sm">Ferramentas internas personalizadas, fluxos de trabalho automatizados e ecossistemas de dados construídos para escalabilidade.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-10">
@@ -269,9 +269,9 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           <div className="flex flex-col gap-8">
             <div className="space-y-4">
               {[
-                { icon: 'settings_suggest', title: 'ERP Optimization', desc: 'Streamlined resource planning for manufacturing and logistics firms.' },
-                { icon: 'database', title: 'Data Lakes & BI', desc: 'Centralized intelligence gathering with custom dashboard reporting.' },
-                { icon: 'security', title: 'Secure Infrastructure', desc: 'Hardened internal networks with multi-layer auth protocols.' }
+                { icon: 'settings_suggest', title: 'Otimização ERP', desc: 'Planejamento de recursos simplificado para empresas de manufatura e logística.' },
+                { icon: 'database', title: 'Lagos de Dados & BI', desc: 'Coleta de inteligência centralizada com relatórios de dashboard personalizados.' },
+                { icon: 'security', title: 'Infraestrutura Segura', desc: 'Redes internas protegidas com protocolos de autenticação multicamadas.' }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div className="bg-primary/20 p-3 rounded-xl text-primary">
@@ -285,7 +285,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
               ))}
             </div>
             <button className="bg-primary text-white py-4 px-8 rounded-xl font-bold hover:scale-105 transition-transform w-fit">
-              Schedule Demo
+              Agendar Demonstração
             </button>
           </div>
         </div>
@@ -294,9 +294,9 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
       {/* CTA */}
       <section className={`flex flex-col items-center justify-center text-center space-y-8 py-20 border-t ${theme === 'dark' ? 'border-white/5' : 'border-slate-100'}`}>
         <h2 className={`text-4xl md:text-5xl font-black max-w-2xl leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-          Ready to build the future of your business?
+          Pronto para construir o futuro do seu negócio?
         </h2>
-        <p className="text-slate-500 text-lg max-w-xl">Join 50+ enterprise partners who have scaled their digital presence with lesolutions.</p>
+        <p className="text-slate-500 text-lg max-w-xl">Junte-se a 50+ parceiros empresariais que escalaram sua presença digital com a lesolutions.</p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <button 
             onClick={() => onNavigate('inquire')}
@@ -304,10 +304,10 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
               theme === 'dark' ? 'bg-primary text-white hover:bg-primary/90' : 'bg-slate-900 text-white hover:bg-slate-800'
             }`}
           >
-            Start Your Project
+            Iniciar Seu Projeto
           </button>
           <button className="bg-primary/10 text-primary px-10 py-5 rounded-2xl font-black text-xl hover:bg-primary/20 transition-colors">
-            Contact Sales
+            Contato com Vendas
           </button>
         </div>
       </section>
