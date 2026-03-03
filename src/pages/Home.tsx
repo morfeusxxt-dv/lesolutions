@@ -348,7 +348,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         <h2 className={`text-4xl md:text-5xl font-black max-w-2xl leading-tight ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
           Pronto para construir o futuro do seu negócio?
         </h2>
-        <p className="text-slate-500 text-lg max-w-xl">Junte-se a 50+ parceiros empresariais que escalaram sua presença digital com a lesolutions.</p>
+        <p className="text-slate-500 text-lg max-w-xl">Junte-se a 50+ parceiros empresariais que escalaram sua presença digital com a LESOLUTIONS.</p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <button 
             onClick={() => onNavigate('inquire')}
