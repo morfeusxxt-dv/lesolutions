@@ -184,7 +184,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             </div>
             <div className="h-64 flex items-end justify-between gap-4 p-4">
               <div className="flex-1 flex flex-col items-center gap-2">
-                <div className={`w-full rounded-t-lg h-24 relative overflow-hidden ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-100'}`}>
+                <div className={`w-full rounded-t-lg h-16 relative overflow-hidden ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-100'}`}>
                   <div className={`absolute bottom-0 w-full h-1/2 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-300'} transition-all duration-1000`}></div>
                   <div className="absolute top-2 left-2 text-xs font-bold text-slate-500">100%</div>
                   <div className="absolute bottom-2 right-2 text-xs text-slate-400">Base</div>
@@ -202,7 +202,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
               </div>
               
               <div className="flex-1 flex flex-col items-center gap-2">
-                <div className="w-full bg-primary/10 rounded-t-lg h-full relative overflow-hidden border-x border-t border-primary/30">
+                <div className="w-full bg-primary/10 rounded-t-lg h-32 relative overflow-hidden border-x border-t border-primary/30">
                   <div className="absolute bottom-0 w-full bg-primary h-full transition-all duration-1000 animate-pulse"></div>
                   <div className="absolute top-2 left-2 text-xs font-bold text-white">340%</div>
                   <div className="absolute bottom-2 right-2 text-xs text-white/80">Máximo</div>
