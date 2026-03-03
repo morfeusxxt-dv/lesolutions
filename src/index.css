@@ -84,6 +84,12 @@
     transform: scale(1.05);
     transition: transform 0.5s ease;
   }
+
+  .group:hover .absolute img,
+  .group:hover .absolute .LazyImage img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
 }
 
 body {

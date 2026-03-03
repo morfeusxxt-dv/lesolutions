@@ -80,14 +80,13 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           className="relative group"
         >
           <div className="absolute -inset-4 bg-gradient-to-r from-primary via-orange-400 to-primary opacity-30 blur-2xl rounded-3xl animate-pulse"></div>
-          <div 
-            className={`relative aspect-video rounded-2xl shadow-2xl overflow-hidden border bg-cover bg-center card-hover-lift ${
+            <div className={`relative aspect-video rounded-2xl shadow-2xl overflow-hidden border card-hover-lift ${
               theme === 'dark' ? 'bg-dark-card border-white/10' : 'bg-white border-slate-100'
-            }`}
-          >
+            }`}>
             <LazyImage 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw12Nvy5UPh344UA1BK4MOXlJbLEOuSOj-Gf7cabXGn7Cr7qy3Sgpvi3GIro1d5qPf_W1J_17RXCFKeb7u4g5VukK--8CRY7mr48aHyCtEo1dnSc8MMumWCj7UDQyW8ThNGc-1kvA3L3E8t78SdWbUG_l0nC6R0edC4LTNNHYfI820VHFVbn3HE25s9AR9GOPZNG0fldWmqzTewRRFRuN_6hXJEAs-xVEEX7NB2lx67wZ27bXxJ2V3Qx6kOoTc4YSfJocvIURKLD9B" 
               alt="Hero showcase"
+              className="absolute inset-0"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
@@ -127,6 +126,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
                 <LazyImage 
                   src={site.img} 
                   alt={site.title}
+                  className="absolute inset-0"
                 />
               </div>
               <div className="px-5 pb-6">
@@ -201,10 +201,11 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-primary p-1 rounded-2xl shadow-lg shadow-primary/20">
               <div className={`rounded-xl overflow-hidden h-full ${theme === 'dark' ? 'bg-dark-card' : 'bg-white'}`}>
-                <div className="h-48 bg-cover bg-center group">
+                <div className="h-48 bg-cover bg-center group relative">
                   <LazyImage 
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUKWV-XPP300pmWmxcJdUijzzRUYQp6dQc_bahz2BvXoRsSZnJ1DEKOZZNkWLo5XRhb5oinCcvcIDufHeoUrxgjx2vqpWfx3w1HrbZtGZi9nFjEWd-8-887IjntYmoVqudFCF_dIG8xs9eiI-Waq_xLYURixkveozoTLTrHmA_VD-biSPkhqsytzDRs2-lMR5fgSxtVqZvMT6kZLQdZCCOGsNxRmnwUn4CXu0_5zutZM2wzhaoM2pRdtXUBQiLT04jHq9GpdUw5947" 
                     alt="Social Ads"
+                    className="absolute inset-0"
                   />
                 </div>
                 <div className="p-4">
@@ -215,10 +216,11 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             </div>
             <div className={`p-1 rounded-2xl shadow-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-900'}`}>
               <div className={`rounded-xl overflow-hidden h-full ${theme === 'dark' ? 'bg-dark-card' : 'bg-white'}`}>
-                <div className="h-48 bg-cover bg-center group">
+                <div className="h-48 bg-cover bg-center group relative">
                   <LazyImage 
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZQQSxohu5ps7ZVrRlYe8pPL4Q7Vkh3olW3HJE9ht8Qf64R5t3XRPI5aBG_kDX1znE_fqKyKqcsLbG7QM3eNoHFEwBwkX7U2YU0WFmn-Skh7HcQ2dH_E5-wAMEXsRk4w4qCTLI62Nlpe7N8cq6MiUyVR2LkO7JuZXG7pVG3BEjnpmBcaQQnPV42knzFL3WBf87IxpAVnMI_atJFAVz_O_EAVzkD59AzrURjY6CrxwxJDrSMbl1cayC-a3_m_5ti4L4DjTJyoJbsdaJ" 
                     alt="Search Engine Marketing"
+                    className="absolute inset-0"
                   />
                 </div>
                 <div className="p-4">

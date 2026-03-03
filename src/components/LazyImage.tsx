@@ -7,16 +7,18 @@ interface LazyImageProps {
   placeholder?: string;
 }
 
-export default function LazyImage({ src, alt, className, placeholder }: LazyImageProps) {
+export default function LazyImage({ src, alt, className }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(false);
-  const imgRef = useRef<HTMLDivElement>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsInView(true);
+          const img = entry.target as HTMLImageElement;
+          if (img.src !== src) {
+            img.src = src;
+          }
           observer.disconnect();
         }
       },
@@ -28,25 +30,23 @@ export default function LazyImage({ src, alt, className, placeholder }: LazyImag
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [src]);
 
   return (
-    <div ref={imgRef} className={`relative overflow-hidden ${className}`}>
+    <div className={`relative overflow-hidden ${className}`}>
       {/* Placeholder */}
       {!isLoaded && (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-300 animate-pulse" />
       )}
       
       {/* Actual Image */}
-      {isInView && (
-        <img
-          src={src}
-          alt={alt}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-          onLoad={() => setIsLoaded(true)}
-          onError={() => setIsLoaded(true)} // Handle error to show fallback
-        />
-      )}
+      <img
+        ref={imgRef}
+        alt={alt}
+        className={`w-full h-full object-cover transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+        onLoad={() => setIsLoaded(true)}
+        onError={() => setIsLoaded(true)}
+      />
     </div>
   );
 }
