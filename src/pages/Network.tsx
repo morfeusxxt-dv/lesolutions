@@ -63,6 +63,18 @@ export default function Network() {
   const { theme } = useTheme();
   const [selectedPartner, setSelectedPartner] = useState<number | null>(null);
 
+  const handleBecomePartner = () => {
+    // Abrir formulário de contato com assunto específico
+    const mailtoLink = `mailto:contato@lesolutions.com?subject=Proposta de Parceria - Network&body=Nome da Empresa:%0ASetor:%0AWebsite:%0A%0ADescreva sua proposta de parceria:`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleScheduleConsultation = () => {
+    // Abrir formulário de consultoria
+    const mailtoLink = `mailto:contato@lesolutions.com?subject=Solicitação de Consultoria&body=Nome:%0AEmpresa:%0ATelefone:%0A%0AServiços de interesse:%0A- Desenvolvimento Web%0A- Tráfego Pago%0A- Consultoria Técnica%0A- Outros%0A%0ABriefing do projeto:`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="px-6 lg:px-20 py-12 min-h-screen">
       {/* Header */}
@@ -238,14 +250,20 @@ export default function Network() {
           Vamos construir algo extraordinário juntos.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-colors">
+          <button 
+            onClick={handleBecomePartner}
+            className="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-colors"
+          >
             Tornar-se Parceiro
           </button>
-          <button className={`px-8 py-4 rounded-xl font-bold border transition-colors ${
-            theme === 'dark' 
-              ? 'border-white/20 text-white hover:bg-white/10' 
-              : 'border-slate-300 text-slate-700 hover:bg-slate-50'
-          }`}>
+          <button 
+            onClick={handleScheduleConsultation}
+            className={`px-8 py-4 rounded-xl font-bold border transition-colors ${
+              theme === 'dark' 
+                ? 'border-white/20 text-white hover:bg-white/10' 
+                : 'border-slate-300 text-slate-700 hover:bg-slate-50'
+            }`}
+          >
             Agendar Consultoria
           </button>
         </div>

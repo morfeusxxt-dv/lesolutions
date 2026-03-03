@@ -9,6 +9,16 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleScheduleDemo = () => {
+    const mailtoLink = `mailto:contato@lesolutions.com?subject=Solicitação de Demonstração&body=Nome:%0AEmpresa:%0ATelefone:%0A%0ASoluções de interesse:%0A- Soluções Empresariais%0A- Otimização ERP%0A- Lagos de Dados & BI%0A- Infraestrutura Segura%0A%0AMelhor data/hora para demo:`;
+    window.location.href = mailtoLink;
+  };
+
+  const handleSalesContact = () => {
+    const mailtoLink = `mailto:contato@lesolutions.com?subject=Contato com Vendas&body=Nome:%0AEmpresa:%0ACargo:%0ATelefone:%0A%0AComo podemos ajudar seu negócio:%0A- Novo projeto%0A- Otimização existente%0A- Consultoria estratégica%0A- Outros%0A%0ABudget aproximado:`;
+    window.location.href = mailtoLink;
+  };
+
   const websites = [
     {
       title: "Excelência em E-commerce",
@@ -290,7 +300,10 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
                 </div>
               ))}
             </div>
-            <button className="bg-primary text-white py-4 px-8 rounded-xl font-bold hover:scale-105 transition-transform w-fit">
+            <button 
+              onClick={handleScheduleDemo}
+              className="bg-primary text-white py-4 px-8 rounded-xl font-bold hover:scale-105 transition-transform w-fit"
+            >
               Agendar Demonstração
             </button>
           </div>
@@ -312,7 +325,10 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           >
             Iniciar Seu Projeto
           </button>
-          <button className="bg-primary/10 text-primary px-10 py-5 rounded-2xl font-black text-xl hover:bg-primary/20 transition-colors">
+          <button 
+            onClick={handleSalesContact}
+            className="bg-primary/10 text-primary px-10 py-5 rounded-2xl font-black text-xl hover:bg-primary/20 transition-colors"
+          >
             Contato com Vendas
           </button>
         </div>
