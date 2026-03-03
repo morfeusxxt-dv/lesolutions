@@ -182,31 +182,64 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
               <h3 className={`text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Métricas de Crescimento</h3>
               <span className="px-4 py-1 bg-green-500/10 text-green-500 rounded-full text-xs font-bold uppercase tracking-widest">+240% ROI</span>
             </div>
-            <div className="h-64 flex items-end justify-between gap-4">
+            <div className="h-64 flex items-end justify-between gap-4 p-4">
               <div className="flex-1 flex flex-col items-center gap-2">
                 <div className={`w-full rounded-t-lg h-24 relative overflow-hidden ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-100'}`}>
-                  <div className={`absolute bottom-0 w-full h-1/2 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
+                  <div className={`absolute bottom-0 w-full h-1/2 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-300'} transition-all duration-1000`}></div>
                   <div className="absolute top-2 left-2 text-xs font-bold text-slate-500">100%</div>
+                  <div className="absolute bottom-2 right-2 text-xs text-slate-400">Base</div>
                 </div>
                 <span className="text-xs font-bold text-slate-500">ANTES</span>
+                <div className="text-xs text-slate-400 text-center">Sem otimização</div>
               </div>
+              
+              {/* Setas de crescimento */}
+              <div className="flex flex-col items-center justify-center">
+                <div className="text-primary animate-pulse">
+                  <span className="material-symbols-outlined text-2xl">trending_up</span>
+                </div>
+                <div className="text-xs font-bold text-primary mt-1">+240%</div>
+              </div>
+              
               <div className="flex-1 flex flex-col items-center gap-2">
                 <div className="w-full bg-primary/10 rounded-t-lg h-full relative overflow-hidden border-x border-t border-primary/30">
-                  <div className="absolute bottom-0 w-full bg-primary h-full"></div>
+                  <div className="absolute bottom-0 w-full bg-primary h-full transition-all duration-1000 animate-pulse"></div>
                   <div className="absolute top-2 left-2 text-xs font-bold text-white">340%</div>
+                  <div className="absolute bottom-2 right-2 text-xs text-white/80">Máximo</div>
+                  {/* Animação de brilho */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 animate-pulse"></div>
                 </div>
                 <span className="text-xs font-bold text-primary italic">COM LESOLUTIONS</span>
+                <div className="text-xs text-primary text-center font-medium">Otimizado</div>
               </div>
             </div>
             <div className={`mt-8 grid grid-cols-3 gap-4 border-t pt-8 ${theme === 'dark' ? 'border-white/5' : 'border-slate-100'}`}>
               {[
-                { label: 'CTR', val: '4.8%', desc: 'Taxa de Cliques' },
-                { label: 'CPA', val: 'R$12,40', desc: 'Custo por Aquisição' },
-                { label: 'Impressões', val: '1.2M', desc: 'Visualizações' }
+                { label: 'CTR', val: '4.8%', desc: 'Taxa de Cliques', trend: 'up', color: 'green' },
+                { label: 'CPA', val: 'R$12,40', desc: 'Custo por Aquisição', trend: 'down', color: 'blue' },
+                { label: 'Impressões', val: '1.2M', desc: 'Visualizações', trend: 'up', color: 'purple' }
               ].map((stat, i) => (
-                <div key={i} className={`text-center ${i === 1 ? (theme === 'dark' ? 'border-x border-white/5' : 'border-x border-slate-100') : ''}`}>
-                  <p className="text-slate-500 text-[10px] font-bold uppercase mb-1">{stat.label}</p>
-                  <p className={`text-lg font-black ${theme === 'dark' ? 'text-white' : 'text-slate-900'} mb-1`}>{stat.val}</p>
+                <div key={i} className={`text-center p-3 rounded-xl transition-all hover:scale-105 ${
+                  i === 1 ? (theme === 'dark' ? 'border-x border-white/5' : 'border-x border-slate-100') : ''
+                } ${theme === 'dark' ? 'hover:bg-white/5' : 'hover:bg-slate-50'}`}>
+                  <div className="flex items-center justify-center gap-1 mb-2">
+                    <p className="text-slate-500 text-[10px] font-bold uppercase">{stat.label}</p>
+                    {stat.trend === 'up' && (
+                      <span className="text-green-500">
+                        <span className="material-symbols-outlined text-xs">arrow_upward</span>
+                      </span>
+                    )}
+                    {stat.trend === 'down' && (
+                      <span className="text-blue-500">
+                        <span className="material-symbols-outlined text-xs">arrow_downward</span>
+                      </span>
+                    )}
+                  </div>
+                  <p className={`text-lg font-black mb-1 ${
+                    stat.color === 'green' ? 'text-green-500' : 
+                    stat.color === 'blue' ? 'text-blue-500' : 
+                    'text-purple-500'
+                  }`}>{stat.val}</p>
                   <p className={`text-xs ${theme === 'dark' ? 'text-white/40' : 'text-slate-400'}`}>{stat.desc}</p>
                 </div>
               ))}
