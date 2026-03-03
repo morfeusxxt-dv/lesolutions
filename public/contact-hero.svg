@@ -1,0 +1,22 @@
+<!-- Placeholder para imagem da página de contato -->
+<!-- Esta imagem será exibida na seção de Suporte Prioritário -->
+<!-- Você pode substituir por uma imagem real da sua equipe ou escritório -->
+
+<!-- Imagem placeholder com gradiente -->
+<svg width="400" height="533" viewBox="0 0 400 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="533" fill="url(#grad1)"/>
+  
+  <!-- Ícone de suporte -->
+  <circle cx="200" cy="200" r="60" fill="white" opacity="0.1"/>
+  <path d="M200 180C185.088 180 173 191.088 173 206C173 220.912 185.088 232 200 232C214.912 232 227 220.912 227 206C227 191.088 214.912 180 200 180ZM200 240C185.088 240 173 251.088 173 266C173 280.912 185.088 292 200 292C214.912 292 227 280.912 227 266C227 251.088 214.912 240 200 240Z" fill="white" opacity="0.3"/>
+  
+  <!-- Texto de placeholder -->
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white" opacity="0.8">Suporte Prioritário</text>
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white" opacity="0.6">Linha direta com líderes de engenharia</text>
+</svg>

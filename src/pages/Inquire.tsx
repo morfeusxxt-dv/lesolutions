@@ -176,7 +176,7 @@ export default function Inquire() {
              <div className="aspect-[3/4] relative">
                <div 
                  className="absolute inset-0 bg-cover bg-center"
-                 style={{ backgroundImage: 'url("/contact-hero.jpg")' }}
+                 style={{ backgroundImage: 'url("/contact-hero.svg")' }}
                ></div>
                <div className={`absolute inset-0 bg-gradient-to-t ${theme === 'dark' ? 'from-dark-bg via-transparent' : 'from-white via-transparent'} to-transparent opacity-80`}></div>
                
