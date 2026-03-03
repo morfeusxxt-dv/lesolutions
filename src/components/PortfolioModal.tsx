@@ -53,16 +53,16 @@ export default function PortfolioModal({ isOpen, onClose, project }: PortfolioMo
           </button>
 
           {/* Image Header */}
-          <div className="aspect-video relative overflow-hidden">
+          <div className="aspect-video relative overflow-hidden max-h-64">
             <div 
-              className="absolute inset-0 bg-cover bg-center"
+              className="absolute inset-0 bg-cover bg-center scale-105"
               style={{ backgroundImage: `url("${project.img}")` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
 
           {/* Content */}
-          <div className="p-8 space-y-6 overflow-y-auto max-h-[50vh]">
+          <div className="p-8 space-y-6 overflow-y-auto max-h-[60vh]">
             <div>
               <h2 className={`text-3xl font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
                 {project.title}
@@ -75,7 +75,7 @@ export default function PortfolioModal({ isOpen, onClose, project }: PortfolioMo
             {project.details && (
               <div>
                 <h3 className={`text-xl font-bold mb-3 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-                  Project Overview
+                  Visão do Projeto
                 </h3>
                 <p className={`leading-relaxed ${theme === 'dark' ? 'text-white/60' : 'text-slate-600'}`}>
                   {project.details}
@@ -86,7 +86,7 @@ export default function PortfolioModal({ isOpen, onClose, project }: PortfolioMo
             {project.technologies && (
               <div>
                 <h3 className={`text-xl font-bold mb-3 ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>
-                  Technologies Used
+                  Tecnologias Utilizadas
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
@@ -111,7 +111,7 @@ export default function PortfolioModal({ isOpen, onClose, project }: PortfolioMo
                   ? 'bg-gradient-to-r from-primary/10 to-orange-400/10 border-primary/20' 
                   : 'bg-gradient-to-r from-primary/5 to-orange-400/5 border-primary/10'
               }`}>
-                <h3 className={`text-xl font-bold mb-2 gradient-text`}>Results</h3>
+                <h3 className={`text-xl font-bold mb-2 gradient-text`}>Resultados</h3>
                 <p className={`leading-relaxed ${theme === 'dark' ? 'text-white/80' : 'text-slate-700'}`}>
                   {project.results}
                 </p>
@@ -121,14 +121,14 @@ export default function PortfolioModal({ isOpen, onClose, project }: PortfolioMo
             {/* Action Buttons */}
             <div className="flex gap-4 pt-4">
               <button className="flex-1 bg-primary text-white py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors">
-                View Live Project
+                Ver Projeto Ao Vivo
               </button>
               <button className={`flex-1 py-3 rounded-xl font-bold border transition-colors ${
                 theme === 'dark' 
                   ? 'border-white/20 text-white hover:bg-white/10' 
                   : 'border-slate-300 text-slate-700 hover:bg-slate-50'
               }`}>
-                Case Study Details
+                Detalhes do Estudo
               </button>
             </div>
           </div>

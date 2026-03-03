@@ -63,11 +63,14 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             >
               Ver Portfólio <span className="material-symbols-outlined">arrow_downward</span>
             </button>
-            <button className={`border-2 px-8 py-4 rounded-xl font-bold text-lg transition-all card-hover-lift ${
-              theme === 'dark' 
-                ? 'bg-dark-card border-white/10 text-white hover:border-primary hover:bg-primary/10' 
-                : 'bg-white border-slate-100 text-slate-700 hover:border-primary hover:bg-primary/5'
-            }`}>
+            <button 
+              onClick={() => onNavigate('services')}
+              className={`border-2 px-8 py-4 rounded-xl font-bold text-lg transition-all card-hover-lift ${
+                theme === 'dark' 
+                  ? 'bg-dark-card border-white/10 text-white hover:border-primary hover:bg-primary/10' 
+                  : 'bg-white border-slate-100 text-slate-700 hover:border-primary hover:bg-primary/5'
+              }`}
+            >
               Nossa Stack
             </button>
           </div>
@@ -166,32 +169,35 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             theme === 'dark' ? 'bg-dark-card border-white/5' : 'bg-white border-slate-100'
           }`}>
             <div className="flex items-center justify-between mb-8">
-              <h3 className={`text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Growth Metrics</h3>
+              <h3 className={`text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Métricas de Crescimento</h3>
               <span className="px-4 py-1 bg-green-500/10 text-green-500 rounded-full text-xs font-bold uppercase tracking-widest">+240% ROI</span>
             </div>
             <div className="h-64 flex items-end justify-between gap-4">
               <div className="flex-1 flex flex-col items-center gap-2">
                 <div className={`w-full rounded-t-lg h-24 relative overflow-hidden ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-100'}`}>
                   <div className={`absolute bottom-0 w-full h-1/2 ${theme === 'dark' ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
+                  <div className="absolute top-2 left-2 text-xs font-bold text-slate-500">100%</div>
                 </div>
-                <span className="text-xs font-bold text-slate-500">BEFORE</span>
+                <span className="text-xs font-bold text-slate-500">ANTES</span>
               </div>
               <div className="flex-1 flex flex-col items-center gap-2">
                 <div className="w-full bg-primary/10 rounded-t-lg h-full relative overflow-hidden border-x border-t border-primary/30">
                   <div className="absolute bottom-0 w-full bg-primary h-full"></div>
+                  <div className="absolute top-2 left-2 text-xs font-bold text-white">340%</div>
                 </div>
-                <span className="text-xs font-bold text-primary italic">WITH LESOLUTIONS</span>
+                <span className="text-xs font-bold text-primary italic">COM LESOLUTIONS</span>
               </div>
             </div>
             <div className={`mt-8 grid grid-cols-3 gap-4 border-t pt-8 ${theme === 'dark' ? 'border-white/5' : 'border-slate-100'}`}>
               {[
-                { label: 'CTR', val: '4.8%' },
-                { label: 'CPA', val: '$12.40' },
-                { label: 'Impressions', val: '1.2M' }
+                { label: 'CTR', val: '4.8%', desc: 'Taxa de Cliques' },
+                { label: 'CPA', val: 'R$12,40', desc: 'Custo por Aquisição' },
+                { label: 'Impressões', val: '1.2M', desc: 'Visualizações' }
               ].map((stat, i) => (
                 <div key={i} className={`text-center ${i === 1 ? (theme === 'dark' ? 'border-x border-white/5' : 'border-x border-slate-100') : ''}`}>
-                  <p className="text-slate-500 text-[10px] font-bold uppercase">{stat.label}</p>
-                  <p className={`text-lg font-black ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>{stat.val}</p>
+                  <p className="text-slate-500 text-[10px] font-bold uppercase mb-1">{stat.label}</p>
+                  <p className={`text-lg font-black ${theme === 'dark' ? 'text-white' : 'text-slate-900'} mb-1`}>{stat.val}</p>
+                  <p className={`text-xs ${theme === 'dark' ? 'text-white/40' : 'text-slate-400'}`}>{stat.desc}</p>
                 </div>
               ))}
             </div>
