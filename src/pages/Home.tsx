@@ -250,12 +250,8 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-primary p-1 rounded-2xl shadow-lg shadow-primary/20">
               <div className={`rounded-xl overflow-hidden h-full ${theme === 'dark' ? 'bg-dark-card' : 'bg-white'}`}>
-                <div className="h-48 bg-cover bg-center group relative">
-                  <LazyImage 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUKWV-XPP300pmWmxcJdUijzzRUYQp6dQc_bahz2BvXoRsSZnJ1DEKOZZNkWLo5XRhb5oinCcvcIDufHeoUrxgjx2vqpWfx3w1HrbZtGZi9nFjEWd-8-887IjntYmoVqudFCF_dIG8xs9eiI-Waq_xLYURixkveozoTLTrHmA_VD-biSPkhqsytzDRs2-lMR5fgSxtVqZvMT6kZLQdZCCOGsNxRmnwUn4CXu0_5zutZM2wzhaoM2pRdtXUBQiLT04jHq9GpdUw5947" 
-                    alt="Social Ads"
-                    className="absolute inset-0"
-                  />
+                <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/aida-public/AB6AXuCUKWV-XPP300pmWmxcJdUijzzRUYQp6dQc_bahz2BvXoRsSZnJ1DEKOZZNkWLo5XRhb5oinCcvcIDufHeoUrxgjx2vqpWfx3w1HrbZtGZi9nFjEWd-8-887IjntYmoVqudFCF_dIG8xs9eiI-Waq_xLYURixkveozoTLTrHmA_VD-biSPkhqsytzDRs2-lMR5fgSxtVqZvMT6kZLQdZCCOGsNxRmnwUn4CXu0_5zutZM2wzhaoM2pRdtXUBQiLT04jHq9GpdUw5947)' }}>
+                  <div className="absolute inset-0 bg-black/20"></div>
                 </div>
                 <div className="p-4">
                   <p className="text-[10px] font-bold text-primary mb-1 uppercase tracking-tighter">Anúncios Sociais</p>
@@ -265,12 +261,8 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             </div>
             <div className={`p-1 rounded-2xl shadow-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-900'}`}>
               <div className={`rounded-xl overflow-hidden h-full ${theme === 'dark' ? 'bg-dark-card' : 'bg-white'}`}>
-                <div className="h-48 bg-cover bg-center group relative">
-                  <LazyImage 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZQQSxohu5ps7ZVrRlYe8pPL4Q7Vkh3olW3HJE9ht8Qf64R5t3XRPI5aBG_kDX1znE_fqKyKqcsLbG7QM3eNoHFEwBwkX7U2YU0WFmn-Skh7HcQ2dH_E5-wAMEXsRk4w4qCTLI62Nlpe7N8cq6MiUyVR2LkO7JuZXG7pVG3BEjnpmBcaQQnPV42knzFL3WBf87IxpAVnMI_atJFAVz_O_EAVzkD59AzrURjY6CrxwxJDrSMbl1cayC-a3_m_5ti4L4DjTJyoJbsdaJ" 
-                    alt="Search Engine Marketing"
-                    className="absolute inset-0"
-                  />
+                <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(https://lh3.googleusercontent.com/aida-public/AB6AXuDZQQSxohu5ps7ZVrRlYe8pPL4Q7Vkh3olW3HJE9ht8Qf64R5t3XRPI5aBG_kDX1znE_fqKyKqcsLbG7QM3eNoHFEwBwkX7U2YU0WFmn-Skh7HcQ2dH_E5-wAMEXsRk4w4qCTLI62Nlpe7N8cq6MiUyVR2LkO7JuZXG7pVG3BEjnpmBcaQQnPV42knzFL3WBf87IxpAVnMI_atJFAVz_O_EAVzkD59AzrURjY6CrxwxJDrSMbl1cayC-a3_m_5ti4L4DjTJyoJbsdaJ)' }}>
+                  <div className="absolute inset-0 bg-black/20"></div>
                 </div>
                 <div className="p-4">
                   <p className="text-[10px] font-bold text-slate-500 mb-1 uppercase tracking-tighter">Marketing em Mecanismos de Busca</p>
