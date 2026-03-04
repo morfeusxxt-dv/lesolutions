@@ -23,7 +23,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
     {
       title: "Excelência em E-commerce",
       desc: "Loja Next.js ultra-rápida para marcas de varejo globais com integração de headless CMS.",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAISb3LmUbQlX1LT0qHiLR3a_eNVDUW7PxqGzFKIVUQO7UNZoCnd3CcU-nQ0XAfGOlUzexi0a_QByDs1k8gOCvHVGFc6YhxNQPfnQvq5UFkV7YHNJ0ILopSwIKBBxP0ccnO_cHFuxbMUDFQX6ilULSfU6rXopA6VA5rtMpvkg9iqBDYDLWPQq1fprquYNtLgdppTRZzb55dHuEZ7hJQ4xloJJQ5moSf-zX-3jJg0mug_rYacF-Sn36w2AsGdIDLqyUrfcSGq_uZzjHx",
+      img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
       details: "Transformação digital completa para varejo de luxo, com gerenciamento de inventário em tempo real, recomendações alimentadas por IA e experiência de checkout perfeita.",
       technologies: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "Stripe API"],
       results: "Alcançou 99.9% de uptime, tempo de carregamento de 2.3s e aumento de 45% na taxa de conversão em 6 meses."
@@ -31,7 +31,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
     {
       title: "Inovação SaaS",
       desc: "Plataformas cloud nativas escaláveis com arquitetura de sincronização de dados em tempo real.",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCjQsZhT2avVWNyX6heoCnA7BAUO6QnI1YdOGguxlgfHXIME5QvBn6zESRBwiXqxl8M_-bxwSCsgkSpfqACi0zz8mTSXKxgla9i7dwCv7F_pMCIPxVkvmastbSOqfO-DZ27e4qrMfABwhZV81ogpn8jZfMbHybZ8LLjPE0TPb-ehPA5xdlFBYr_iN3H7GDkGR2wyy3gop48UlKAeOjqFaEayXmmV8XbHKXJk1WBryPudfNuyF6SKyNEDDIKfg8W-v_TA3pSAL6PDc1Y",
+      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",
       details: "Plataforma de gerenciamento de projetos empresarial com colaboração em tempo real, dashboard analítico avançado e otimização de fluxos de trabalho automatizados.",
       technologies: ["React", "Node.js", "MongoDB", "WebSocket", "Docker"],
       results: "Escalado para 100K+ usuários ativos diários, reduziu tempo de conclusão de projetos em 35% e alcançou 99.95% de uptime SLA."
@@ -39,7 +39,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
     {
       title: "Portal Corporativo",
       desc: "Sistemas internos de alta segurança para planejamento de recursos empresariais e relatórios.",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFKVdpy9ovVagXOt5U5ZHUOqUP3AZYqF5GfCmjDXB0GbD9JPTPVADWXSUJ51jD9CH-S_kN_zA9E2YD3Jj3gH0G7YtAB9qhgpRPDq77ZJaxdq_GnNuHW5Ips8zUJm2mmUAuLlUcenUwBj22qEqF4_wtI-ZWVy2MXz4Ewq_DMsdPaNzXm8pCU_L5CNfRseoI6OoyHZFMmKII_qCeGlzqsvORbYGieO-wqogosQmHiivzAwILNm0xqcX-OBa4bIP_J3jsWlmWkZ7SIx5B",
+      img: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop&crop=center",
       details: "Solução ERP abrangente com arquitetura multi-tenant, protocolos de segurança avançados e inteligência de negócios alimentada por IA.",
       technologies: ["Angular", ".NET Core", "SQL Server", "Azure", "Power BI"],
       results: "Otimizou operações para 5000+ funcionários, reduziu tempo de processamento em 60% e garantiu zero violações de dados por 3+ anos."
@@ -113,12 +113,12 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             <div className="w-2 h-10 bg-primary rounded-full"></div>
             <h2 className={`text-3xl font-black uppercase tracking-tighter italic ${theme === 'dark' ? 'text-white' : 'text-slate-900'}`}>Sites</h2>
           </div>
-          <div className="flex gap-2">
-            <button className="p-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all">
-              <span className="material-symbols-outlined">chevron_left</span>
+          <div className="flex gap-1">
+            <button className="p-1.5 rounded-lg border border-primary/20 text-primary/60 hover:border-primary hover:text-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+              <span className="material-symbols-outlined text-sm">chevron_left</span>
             </button>
-            <button className="p-2 rounded-full bg-primary text-white shadow-md shadow-primary/30">
-              <span className="material-symbols-outlined">chevron_right</span>
+            <button className="p-1.5 rounded-lg border border-primary/20 text-primary/60 hover:border-primary hover:text-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+              <span className="material-symbols-outlined text-sm">chevron_right</span>
             </button>
           </div>
         </div>
