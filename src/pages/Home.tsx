@@ -287,21 +287,31 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-10">
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl"></div>
-            <div className={`relative p-4 rounded-[2rem] border shadow-2xl ${theme === 'dark' ? 'bg-dark-card border-white/10' : 'bg-slate-800 border-slate-700'}`}>
-              <div className={`rounded-2xl aspect-[4/3] overflow-hidden flex flex-col ${theme === 'dark' ? 'bg-dark-bg' : 'bg-white'}`}>
-                <div className={`p-3 border-b flex gap-1.5 ${theme === 'dark' ? 'bg-slate-800 border-white/5' : 'bg-slate-100 border-slate-200'}`}>
-                  <div className="w-2 h-2 rounded-full bg-red-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-                  <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                </div>
-                <div className="flex-1 p-6 space-y-4">
-                  <div className={`h-8 w-1/3 rounded-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-100'}`}></div>
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="h-24 bg-primary/5 rounded-lg border-2 border-primary/20"></div>
-                    <div className={`h-24 rounded-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-50'}`}></div>
-                    <div className={`h-24 rounded-lg ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-50'}`}></div>
+            <div className={`relative p-4 rounded-[2rem] border shadow-2xl overflow-hidden ${theme === 'dark' ? 'bg-dark-card border-white/10' : 'bg-slate-800 border-slate-700'}`}>
+              <div className="rounded-2xl aspect-[4/3] overflow-hidden relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center"
+                  alt="Business Solutions Dashboard"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute top-4 left-4 right-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                    <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
+                    <div className="w-2 h-2 rounded-full bg-red-400"></div>
                   </div>
-                  <div className={`h-32 rounded-lg w-full ${theme === 'dark' ? 'bg-slate-800' : 'bg-slate-50'}`}></div>
+                  <div className="text-white/90 text-xs font-mono">lesolutions-erp-system</div>
+                </div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
+                    <div className="text-white text-xs font-bold mb-1">System Status: Online</div>
+                    <div className="flex gap-4 text-white/80 text-[10px]">
+                      <span>CPU: 24%</span>
+                      <span>Memory: 67%</span>
+                      <span>Network: Optimal</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
