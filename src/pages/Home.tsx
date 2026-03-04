@@ -247,7 +247,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           </div>
 
           {/* Ad Mockups */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-primary p-1 rounded-2xl shadow-lg shadow-primary/20">
               <div className={`rounded-xl overflow-hidden h-full ${theme === 'dark' ? 'bg-dark-card' : 'bg-white'}`}>
                 <div className="h-48 bg-cover bg-center group relative">
